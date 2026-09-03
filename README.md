@@ -5,57 +5,52 @@
 <h1 align="center">KSA Latest Copy</h1>
 
 <p align="center">
-  <strong>Never send the wrong version again.</strong><br>
-  A calm, local-first Windows utility for finding newer copies of Office documents and PDFs.
+  A Windows utility that helps you check whether a newer copy of your document exists.
 </p>
 
-> **Project status:** In development. This public repository is the official product showcase; the application source is private and proprietary.
+**Status:** In development
 
-![KSA Latest Copy dark-mode product design](assets/product-preview-dark.png)
+## About the project
 
-## The everyday problem
+The idea came from a common office problem. You are ready to send a document, but your folders contain several files with names like `Report Final.docx`, `Report Final 2.docx`, and `Report Final New.docx`. It is easy to choose the wrong one.
 
-Files named `Report Final.docx`, `Report Final 2.docx`, and `Report Final REALLY FINAL.docx` are a familiar office problem. KSA Latest Copy is designed to check a selected document against folders the user approves, identify likely newer related copies, and explain the evidence before the user sends the wrong file.
+KSA Latest Copy is being built to check a selected document against folders approved by the user. It will look for related files, compare useful details, and clearly explain what it finds.
 
-## What makes it useful
+## Planned workflow
 
-- Checks DOCX, XLSX, PPTX, and PDF documents.
-- Compares filenames, modification times, document structure, and local content similarity.
-- Shows the exact paths and reasons behind every recommendation.
-- Handles uncertain or incomplete scans honestly instead of giving false reassurance.
-- Never deletes, renames, moves, or replaces a document.
+1. Choose the folders the application may check.
+2. Drop a DOCX, XLSX, PPTX, or PDF file into the window.
+3. Review any newer or closely related copies found on the computer.
+4. Open the recommended file or locate it in File Explorer.
 
-## Private by design
+The application will never replace, rename, move, or delete a document automatically.
 
-- Files remain on the user's Windows device.
-- Only folders explicitly approved by the user are scanned.
-- No account, upload, cloud dashboard, advertising, or telemetry.
-- No background indexing in the first release.
-- Cloud-only placeholder files are not silently downloaded for comparison.
+## Privacy
 
-## Planned experience
+Document checks take place on the Windows device.
 
-1. Choose the folders KSA Latest Copy may check.
-2. Drop a document into the app or select it with Browse.
-3. Review a clear local result: no newer related copy found, newer copy found, several possible versions, or incomplete scan.
-4. Open the recommended file or reveal it in File Explorer. The app never replaces anything automatically.
+- No account is required.
+- Documents are not uploaded.
+- Only folders selected by the user are checked.
+- No advertising or usage tracking is planned.
+- Online-only cloud files will not be downloaded without permission.
 
-## Windows-first engineering
+## Development progress
 
-The planned desktop application uses C# and .NET 10 LTS with WinUI 3 and MSIX packaging. Office formats are read structurally through Open XML; PDFs are compared through local text extraction. The matching system is deterministic and explainable—no document content is sent to an AI service.
+- Product research and feature planning are complete.
+- The light and dark interface designs are complete.
+- The application logo has been approved.
+- The technical architecture and privacy rules are complete.
+- Windows application development is the next stage.
 
-## Roadmap
+## Technology
 
-- [x] Product research and positioning
-- [x] Light and dark visual system
-- [x] Approved application logo
-- [x] Technical and privacy architecture
-- [ ] Windows application foundation
-- [ ] Local comparison engine and test corpus
-- [ ] Accessible production interface
-- [ ] Microsoft Store release candidate
-- [ ] Microsoft Store publication
+The application is planned for Windows using C#, .NET 10, WinUI 3, and MSIX packaging. Office documents will be read through Open XML, and PDF comparison will run locally.
 
-## Repository and rights
+## Source code
 
-This repository intentionally contains product information and approved preview material, not application source code. KSA Latest Copy is a closed-source proprietary product. No open-source license is granted, and no permission is given to copy, modify, redistribute, or create derivative works from the product branding or materials in this repository.
+This is the public page for the project. It contains product information and approved presentation material only.
+
+The application source code is private because KSA Latest Copy is proprietary software. The finished application is planned as a free Microsoft Store download, but it will not be open source.
+
+All product names, branding, and materials in this repository are reserved. No permission is granted to copy, modify, or redistribute them.

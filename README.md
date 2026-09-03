@@ -10,6 +10,8 @@
 
 **Status:** In development
 
+![KSA Latest Copy interface preview](assets/product-preview-dark.png)
+
 ## About the project
 
 The idea came from a common office problem. You are ready to send a document, but your folders contain several files with names like `Report Final.docx`, `Report Final 2.docx`, and `Report Final New.docx`. It is easy to choose the wrong one.
